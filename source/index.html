@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__icon-mobile" href="#">
+      <a class="main-header__icons icon" href="#">
         <img src="img/index/logo-mobile.svg" width="33px" height="38px" alt="Иконка Кэт Энерджи.">
+        <img class="icon__logo" src="img/index/logo-cat-energy.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
       </a>
-      <img class="main-header__logo" src="img/index/logo-cat-energy.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
@@ -36,31 +36,29 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="main-container__title">Функциональное<br>
+      <h1 class="main-container__title">Функциональное
         питание для котов</h1>
       <p class="main-container__text">Занялся собой? Займись котом!</p>
       <img class="main-container__image-food" src="img/index/index-can-mobile-food.png" width="280" height="270" alt="Упаковка питания Кэт Энерджи.">
-      <div class="main-container__button-form">
-        <a class="button-form__link-form" href="form.html">Подобрать программу</a>
-      </div>
-      <section class="weight-loss">
-        <div class="weight-loss__wrapper">
-          <h2 class="weight-loss__title">Похудение</h2>
-          <p class="weight-loss-excerpt">Ваш кот весит больше собаки и почти утратил способность лазить
+      <a class="main-container__button-form" href="form.html">Подобрать программу</a>
+      <section class="weight">
+        <div class="weight__wrapper">
+          <h2 class="weight__title">Похудение</h2>
+          <p class="weight-excerpt">Ваш кот весит больше собаки и почти утратил способность лазить
             по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="weight-loss__link-catalog" href="catalog.html">
+          <a class="weight__link-catalog" href="catalog.html">
             <span>Kаталог slim</span>
             <svg aria-hidden="true" focusable="false" width="32" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000"/></svg>
           </a>
         </div>
       </section>
-      <section class="weight-gain">
-        <div class="weight-gain__wrapper">
-          <h2 class="weight-gain__title">Набор массы</h2>
-          <p class="weight-gain__excerpt">Заработать авторитет среди дворовых котов и даже собак?
+      <section class="weight weight-gain">
+        <div class="weight__wrapper">
+          <h2 class="weight__title">Набор массы</h2>
+          <p class="weight__excerpt">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="weight-gain__link-catalog" href="catalog.html">
+          <a class="weight__link-catalog" href="catalog.html">
             <span>Kаталог pro</span>
             <svg aria-hidden="true" focusable="false" width="32" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000"/></svg>
@@ -111,13 +109,15 @@
           <img class="example__cat-before toggle__min--current" src="img/index/before-cat-mobile.png" width="280px" height="232px" alt="Толстый кот до правильного питания.">
           <div class="example__range range">
             <div class="range__scale">
-              <div class="range__bar">Было
+              <div class="range__bar">
+                <span>Было</span>
                 <button class="range__toggle toggle__min" type="button">
                   <span class="visually-hidden">Изменить минимальную величину веса кота.</span>
                 </button>
                 <button class="range__toggle toggle__max" type="button">
                   <span class="visually-hidden">Изменить максимальную величину веса кота.</span>
-                </button>Стало
+                </button>
+                <span>Cтало</span>
               </div>
             </div>
           </div>
