@@ -8,7 +8,7 @@
     <header class="main-header">
       <a class="main-header__icon-mobile" href="index.html">
         <img src="img/catalog/logo-mobile.svg" width="33px" height="38px" alt="Иконка Кэт Энерджи.">
-        <img class="main-header__logo" src="img/index/logo-cat-energy.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
+        <img class="main-header__logo" src="img/catalog/logo-cat-energy.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -39,60 +39,103 @@
       <h1 class="main-form__title">Подбор программы</h1>
       <p class="main-form__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
-      <form class="questionary" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="visually-hidden">Анкета кота.</h2>
-        <label>
-          <span class="questionary__field-name">ИМЯ:<sup>*</sup></span>
-          <input class="questionary__field field" type="text" name="name" required>
-        </label>
-        <label>
-          <span class="questionary__field-name">Вес (кг):<sup>*</sup></span>
-          <input class="questionary__field field" type="text" name="weight" required>
-        </label>
-        <label>
-          <span class="questionary__field-name">Возраст (лет):</span>
-          <input class="questionary__field field" type="text" name="weight" required>
-        </label>
-        <fieldset class="questionary__program-selection program-goal">
-          <legend class="visually-hidden">Цель программы</legend>
-          <ul class="program-goal__list">
-            <li class="program-goal__item">
-              <label class="program-goal__control control">
-                <input class="visually-hidden" type="radio" name="goal" value="decrease-weight" checked>
-                <span class="control__mark"></span>
-                <span class="control__label">Похудение</span>
-              </label>
-            </li>
-            <li class="program-goal__item">
-              <label class="program-goal__control control">
-                <input class="visually-hidden" type="radio" name="goal" value="increase-weight">
-                <span class="control__mark"></span>
-                <span class="control__label">Набор массы</span>
-              </label>
-            </li>
-            <li class="program-goal__item">
-              <label class="program-goal__control control">
-                <input class="visually-hidden" type="radio" name="goal" value="advice" checked>
-                <span class="control__mark"></span>
-                <span class="control__label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-         </ul>
-        </fieldset>
-        <h2 class="questionary__subtitle-form">Контактные данные (владельца кота)</h2>
-        <label>
-          <span class="questionary__field-name">E-mail:<sup>*</sup></span>
-          <input class="questionary__field field" type="" name="name" required>
-        </label>
-        <label>
-          <span class="questionary__field-name">Вес (кг):<sup>*</sup></span>
-          <input class="questionary__field field" type="text" name="weight" required>
-        </label>
-        <label>
-          <span class="questionary__field-name">Возраст (лет):</span>
-          <input class="questionary__field field" type="text" name="weight" required>
-        </label>
-      </form>
+      <section class="questionary">
+        <form class="questionary__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="questionary__cat-info">
+            <legend class="visually-hidden">Анкета кота.</legend>
+            <label>
+              <span class="questionary__field-name">ИМЯ:<sup>*</sup></span>
+              <input class="questionary__field field" type="text" name="name" required>
+            </label>
+            <label>
+              <span class="questionary__field-name">Вес (кг):<sup>*</sup></span>
+              <input class="questionary__field field" type="text" name="weight" required>
+            </label>
+            <label>
+              <span class="questionary__field-name">Возраст (лет):</span>
+              <input class="questionary__field field" type="text" name="age" required>
+            </label>
+          </fieldset>
+          <fieldset class="questionary__program-selection program-goal">
+            <legend class="visually-hidden">Цель программы</legend>
+            <ul class="program-goal__list">
+              <li class="program-goal__item">
+                <label class="program-goal__control control">
+                  <input class="visually-hidden" type="radio" name="goal" value="decrease-weight" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Похудение</span>
+                </label>
+              </li>
+              <li class="program-goal__item">
+                <label class="program-goal__control control">
+                  <input class="visually-hidden" type="radio" name="goal" value="increase-weight">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="program-goal__item">
+                <label class="program-goal__control control">
+                  <input class="visually-hidden" type="radio" name="goal" value="advice" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+           </ul>
+          </fieldset>
+          <fieldset class="guestionary__contacts-form">
+            <legend class="questionary__subtitle-form">Контактные данные (владельца кота)</legend>
+            <label>
+              <span class="questionary__field-name">E-mail:<sup>*</sup></span>
+              <input class="questionary__field field" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label>
+              <span class="questionary__field-name">Телефон:<sup>*</sup></span>
+              <input class="questionary__field field" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
+            </label>
+          </fieldset>
+          <fieldset class="questionary__comment">
+            <legend class="questinary__subtitle-form">Комментарий</legend>
+            <textarea name="comment" placeholder="Расскажите обо всех повадках кота" rows="10" cols="35"></textarea>
+          </fieldset>
+          <fieldset class="questionary__extra-form">
+            <legend class="questionary__subtitle-form">Дополнительно</legend>
+            <ul class="questionary__list">
+              <li class="questionary__item">
+                <label class="questionary__control control">
+                  <input class="visually-hidden" type="checkbox" name="additional-item" value="sweetener" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="questionary__item">
+                <label class="questionary__control control">
+                  <input class="visually-hidden" type="checkbox" name="additional-item" value="water">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="questionary__item">
+                <label class="questionary__control control">
+                  <input class="visually-hidden" type="checkbox" name="additional-item" value="milk">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Молоко</span>
+                </label>
+              </li>
+              <li class="questionary__item">
+                <label class="questionary__control control">
+                  <input class="visually-hidden" type="checkbox" name="additional-item" value="vitamins">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="questionary__button-apply" type="submit">Отправить заявку</button>
+        </form>
+        <small class="questionary__legend-form">
+          * — Обязательные поля
+        </small>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
