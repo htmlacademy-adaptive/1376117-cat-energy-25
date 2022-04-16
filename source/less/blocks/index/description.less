@@ -1,0 +1,85 @@
+.description__wrapper {
+  width: 279px;
+  margin-bottom: 49px;
+}
+
+.description__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.description__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.description__item {
+  padding-left: 80px;
+  margin-bottom: 24px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-color: #68b738;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+}
+
+.description__item-img-leaf {
+  &::after {
+    content: url("../../../img/index/icon_leaf.svg");
+    height: 50px;
+    width: 36px;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+  }
+}
+
+.description__item-img-tub {
+  &::after {
+    content: url("../../../img/index/icon_tub.svg");
+    height: 50px;
+    width: 36px;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+  }
+}
+
+.description__item-img-eat {
+  &::after {
+    content: url("../../../img/index/icon_eat.svg");
+    height: 50px;
+    width: 36px;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+  }
+}
+
+.description__item-img-alarm {
+  &::after {
+    content: url("../../../img/index/icon_alarm.svg");
+    height: 50px;
+    width: 36px;
+    position: absolute;
+    left: 11px;
+    top: 13px;
+  }
+}
+

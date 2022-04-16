@@ -1,0 +1,60 @@
+@extra-goods-background-color: rgba(104, 183, 56, 0.85);
+
+.extra-goods__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.extra-goods__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.extra-goods__item {
+  margin-bottom: 31px;
+}
+
+.extra-goods__subtitle {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra-goods__benefit {
+  background-image: url("../../../img/catalog/cat-in-backpack.jpg");
+  width: 280px;
+  height: 290px;
+}
+
+.extra-goods__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: @extra-goods-background-color;
+}
+
+.extra-goods__benefit-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 128px;
+  padding: 57px;
+
+  &::before {
+    content: url("../../../img/catalog/icon_gift.svg");
+    position: absolute;
+    left: 35%;
+    bottom: 90%;
+  }
+}
+
