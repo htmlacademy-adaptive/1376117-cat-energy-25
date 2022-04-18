@@ -4,11 +4,11 @@
 }
 
 .description__title {
-  font-family: "Oswald", sans-serif;
+  font-family: @font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: @black-color;
   text-transform: uppercase;
 }
 
@@ -32,53 +32,41 @@
     display: block;
     height: 60px;
     width: 60px;
-    background-color: #68b738;
+    background-color: @decorate-background-color;
     position: absolute;
     left: 0;
     top: -2px;
   }
-}
 
-.description__item-img-leaf {
   &::after {
-    content: url("../../../img/index/icon_leaf.svg");
     height: 50px;
     width: 36px;
     position: absolute;
     left: 15px;
     top: 13px;
   }
-}
 
-.description__item-img-tub {
-  &::after {
-    content: url("../../../img/index/icon_tub.svg");
-    height: 50px;
-    width: 36px;
-    position: absolute;
-    left: 15px;
-    top: 13px;
+  &--leaf {
+    &::after {
+      content: url("../img/index/icon_leaf.svg");
+    }
   }
-}
 
-.description__item-img-eat {
-  &::after {
-    content: url("../../../img/index/icon_eat.svg");
-    height: 50px;
-    width: 36px;
-    position: absolute;
-    left: 15px;
-    top: 13px;
+  &--tub {
+    &::after {
+      content: url("../img/index/icon_tub.svg");
+    }
   }
-}
 
-.description__item-img-alarm {
-  &::after {
-    content: url("../../../img/index/icon_alarm.svg");
-    height: 50px;
-    width: 36px;
-    position: absolute;
-    left: 11px;
-    top: 13px;
+  &--eat {
+    &::after {
+      content: url("../img/index/icon_eat.svg");
+    }
+  }
+
+  &--alarm {
+    &::after {
+      content: url("../img/index/icon_alarm.svg");
+    }
   }
 }
