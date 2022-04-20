@@ -1,0 +1,32 @@
+.main-nav {
+  &--close {
+    background: url("../img/header/button-toggle-mobile.svg") no-repeat;
+    background-size: 100% 100%;
+    width: 24px;
+    height: 16px;
+    border: none;
+  }
+}
+
+.main-nav__toggle {
+  background: url("../img/header/mobile-button-close.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav--close .main-nav__list {
+  display: none;
+}
+
+.main-nav__list {
+  font-family: @font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: @black-color;
+  background-color: @base-color;
+  list-style-type: none;
+}
