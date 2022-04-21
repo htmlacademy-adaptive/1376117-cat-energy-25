@@ -1,26 +1,52 @@
+.main-container {
+  margin: 0 auto 20px;
+  width: 320px;
+  min-height: 480px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
 .main-container__wrapper {
-  margin: 0;
-  margin-bottom: 20px;
-  width: 320px;
-}
-
-.main-container__picture {
-  background-image: url("../img/index/index-background-1.jpg");
+  background-image: linear-gradient(to bottom, @opacity-background-color 300px, @base-color 300px),
+    url("../../../img/index/index-background-1.jpg");
   background-repeat: no-repeat;
-  width: 320px;
-  height: 302px;
-}
+  margin-bottom: 27px;
 
-.main-container__picture-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: @opacity-background-color;
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 694px;
+    background-image: linear-gradient(to right, @base-color 50%, @opacity-background-color 50%),
+      url("../img/index/cat-background-desktop.jpg");
+    background-position: right top;
+    background-size: contain;
+    margin: -78px auto 20px;
+  }
 }
 
 .main-container__header {
   font-family: @font;
   color: @base-color;
-  background-color: @opacity-background-color;
+
+  @media (min-width: @tablet-width) {
+    background-color: @base-color;
+    color: @black-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 585px;
+    width: 610px;
+  }
 }
 
 .main-container__title {
@@ -28,6 +54,19 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-family: @font;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 111px;
+    margin-bottom: 40px;
+  }
 }
 
 .main-container__text {
@@ -35,4 +74,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-family: @font;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
 }
