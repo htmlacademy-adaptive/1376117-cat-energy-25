@@ -1,6 +1,18 @@
 .main-footer__wrapper {
   width: 320px;
+  margin: 0 auto 20px;
   background-color: @block-background-color;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    background-color: @base-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .main-footer__copyright {
