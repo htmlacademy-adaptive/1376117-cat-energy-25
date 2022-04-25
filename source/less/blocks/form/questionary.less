@@ -1,16 +1,37 @@
 .questionary__form {
-  margin-bottom: 21px;
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .questionary__cat-info {
   border: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 66px;
+  }
 }
 
 .questionary__program-selection {
   border: none;
   text-transform: uppercase;
   color: @extra-block-font-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 71px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 10px;
+    left: 800px;
+    margin: 0;
+  }
 }
 
 .guestionary__contacts-form,
@@ -19,20 +40,87 @@
   border: none;
 }
 
+.guestionary__contacts-form {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 69px;
+  }
+}
+
+.questionary__contacts-wrap {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.questionary__comment {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 65px;
+  }
+}
+
 .questionary__subtitle-form {
   font-size: 24px;
   line-height: 26px;
   color: @black-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
-.questionary__field-name {
-  text-transform: uppercase;
+.questionary__textarea {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 631px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.questionary__extra-form {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .questionary__list {
   list-style-type: none;
   color: @black-color;
   text-transform: uppercase;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -19px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.questionary__item {
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .questionary__legend-form {

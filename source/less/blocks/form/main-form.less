@@ -1,10 +1,22 @@
 .main-form__wrapper {
-  width: 320px;
+  width: 280px;
   font-family: @font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   padding: 27px 20px 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 633px;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 77px 110px 80px;
+  }
 }
 
 .main-form__title {
@@ -14,6 +26,11 @@
   font-size: 36px;
   line-height: 36px;
   color: @black-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-form__text {
@@ -23,4 +40,9 @@
   line-height: 18px;
   color: @black-color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
