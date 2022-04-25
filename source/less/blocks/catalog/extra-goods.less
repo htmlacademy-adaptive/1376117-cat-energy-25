@@ -1,3 +1,15 @@
+.extra-goods {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .extra-goods__title {
   font-family: @font;
   font-weight: 400;
@@ -6,14 +18,30 @@
   color: @black-color;
 }
 
+.extra-goods__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
 .extra-goods__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 896px;
+  }
 }
 
 .extra-goods__item {
   margin-bottom: 31px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .extra-goods__subtitle {
@@ -29,6 +57,18 @@
   background-image: url("../img/catalog/cat-in-backpack.jpg");
   width: 280px;
   height: 290px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/cat-in-backpack-tablet.png");
+    width: 707px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/cat-in-backpack.jpg");
+    width: 245px;
+    height: 289px;
+  }
 }
 
 .extra-goods__overlay {
