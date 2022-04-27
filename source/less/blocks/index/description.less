@@ -1,6 +1,11 @@
 .description__wrapper {
-  width: 279px;
   margin-bottom: 49px;
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
 }
 
 .description__title {
@@ -16,6 +21,11 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .description__item {
@@ -67,6 +77,31 @@
   &--alarm {
     &::after {
       content: url("../img/index/icon_alarm.svg");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    padding: 0;
+    margin-right: 133px;
+    margin-bottom: 37px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-right: 71px;
+    margin-bottom: 26px;
+
+    &:nth-child(2n) {
+      margin-right: 71px;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

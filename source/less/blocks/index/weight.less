@@ -1,5 +1,19 @@
 .weight {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+    padding: 83px 110px 71px;
+    margin: 0 auto;
+  }
+}
+
+.weight__wrapper {
   width: 280px;
+  color: @base-font-color;
+  background-color: @block-background-color;
+  padding: 18px 20px;
+  margin-bottom: 20px;
 
   &--gain .weight__title {
     padding-left: 78px;
@@ -12,14 +26,19 @@
       top: 5px;
     }
   }
-}
 
-.weight__wrapper {
-  margin: 0;
-  color: @base-font-color;
-  background-color: @block-background-color;
-  margin-bottom: 20px;
-  padding: 18px 20px;
+  @media (min-width: @tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 530px;
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .weight__title {

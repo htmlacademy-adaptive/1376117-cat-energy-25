@@ -1,3 +1,24 @@
+.site-list {
+  position: absolute;
+  right: -15px;
+  top: 20px;
+  width: 320px;
+  min-height: 198px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    flex-direction: row;
+    align-items: baseline;
+    min-height: 0;
+    width: 440px;
+    padding: 0;
+  }
+}
+
 .site-list__link-item {
   text-decoration: none;
   color: inherit;
