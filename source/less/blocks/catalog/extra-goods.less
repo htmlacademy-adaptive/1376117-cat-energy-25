@@ -17,11 +17,16 @@
   font-size: 24px;
   line-height: 24px;
   color: @black-color;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .extra-goods__wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -45,7 +50,7 @@
   row-gap: 14px;
 
   @media (min-width: @tablet-width) {
-    padding: 28px 30px;
+    padding: 28px 0;
     grid-template-columns: 1fr 132px 48px 45px;
     grid-template-rows: auto 23px 40px;
     row-gap: 0;
