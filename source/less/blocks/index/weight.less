@@ -1,4 +1,8 @@
 .weight {
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -9,34 +13,70 @@
 }
 
 .weight__wrapper {
-  width: 280px;
+  width: 240px;
   color: @base-font-color;
   background-color: @block-background-color;
   padding: 18px 20px;
+  margin: 0 auto;
   margin-bottom: 20px;
 
   &--gain .weight__title {
     padding-left: 78px;
 
     &::after {
-      content: url("../img/index/cat-pro.svg");
-      height: 50px;
-      width: 36px;
+      content: "";
+      background-image: url("../img/index/cat-pro.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 28px;
+      width: 67px;
       left: -9px;
       top: 5px;
     }
   }
 
   @media (min-width: @tablet-width) {
-    width: 668px;
+    width: 629px;
+    margin-bottom: 30px;
+    padding: 77px 27px 53px 52px;
+
+    &--gain .weight__title {
+      padding: 0;
+
+      &::after {
+        background-image: url("../img/index/cat-pro.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 112px;
+        width: 268px;
+        left: 343px;
+        top: 50px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 530px;
+    width: 466px;
+    margin: 0;
     margin-right: 80px;
+    padding: 47px 52px;
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &--gain .weight__title {
+      padding-left: 162px;
+
+      &::after {
+        background-image: url("../img/index/cat-pro.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 56px;
+        width: 134px;
+        left: -15px;
+        top: -5px;
+      }
     }
   }
 }
@@ -48,6 +88,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: @black-color;
+  margin: 0;
   margin-bottom: 29px;
   padding-left: 69px;
   position: relative;
@@ -65,12 +106,93 @@
   }
 
   &::after {
-    content: url("../img/index/cat-slim.svg");
+    content: "";
+    background-image: url("../img/index/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 50px;
     width: 36px;
     position: absolute;
     left: 10px;
     bottom: -6px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 24px;
+    padding: 0;
+    padding-right: 289px;
+
+    &::before {
+      content: "";
+      height: 200px;
+      width: 200px;
+      top: 15px;
+      left: 380px;
+      bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/index/cat-slim.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 194px;
+      width: 140px;
+      position: absolute;
+      left: 410px;
+      bottom: 0;
+      top: 6px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    margin-bottom: 73px;
+    padding-left: 162px;
+
+    &::before {
+      height: 100px;
+      width: 100px;
+      top: -30px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/index/cat-slim.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 97px;
+      width: 70px;
+      position: absolute;
+      left: 10px;
+      top: -39px;
+    }
+  }
+}
+
+.weight-excerpt {
+  width: 240px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @weight-line-decoration;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+    border-bottom: none;
+    margin: 0;
+    margin-bottom: 48px;
+    padding-bottom: 0;
+    padding-right: 285px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: @black-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+    padding: 0;
   }
 }
 
@@ -78,7 +200,7 @@
   display: inline-block;
   text-decoration: none;
   color: @black-color;
-  margin-top: 38px;
+  margin-top: 15px;
 }
 
 .weight__name-catalog {
@@ -86,4 +208,13 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.weight__link-image {
+  fill: @black-color;
 }

@@ -1,3 +1,11 @@
+.example-result {
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    border-top: 1px solid @lightgrey-line;
+    width: 100%;
+  }
+}
+
 .example-result__wrapper {
   width: 280px;
   background-color: @block-example-result-color;
@@ -6,8 +14,8 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     background-color: @base-color;
-    width: 708px;
-    margin-top: 53px;
+    width: 768px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,51 +34,36 @@
   color: @black-color;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 63px;
+  }
 }
 
 .example-result__value {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     width: 366px;
     display: inline-flex;
     margin: 0;
-    margin-top: 54px;
-    margin-right: 167px;
   }
-}
-
-.example-result__list {
-  margin: 0;
-  margin-bottom: 20px;
-  width: 124px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: @tablet-width) {
-    width: 162px;
-  }
-}
-
-.examle-result__number {
-  font-family: @font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: @black-color;
-}
-
-.example-result__description {
-  margin: 0;
 }
 
 .example-result__text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 708px;
+    margin-bottom: 54px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 436px;
@@ -80,6 +73,19 @@
 .example-result__cat-before {
   display: inline-block;
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.example-result__double-cat {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 80px auto 25px;
+  }
 }
 
 .example-result__range {
@@ -105,6 +111,7 @@
     display: inline-block;
     white-space: pre;
     font-size: 20px;
+    margin-left: 167px;
   }
 
   @media (min-width: @desktop-width) {

@@ -18,7 +18,7 @@
             <span class="visually-hidden">Открыть меню.</span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list site-list">
+            <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--current">
                 <a class="site-list__link-item">
                   Главная
@@ -42,11 +42,11 @@
     <main class="main-container">
       <div class="main-container__wrapper">
         <div class="main-container__header">
-          <h1 class="main-container__title">Функциональное
+          <h1 class="main-container__title">Функциональное<br>
           питание для котов</h1>
           <p class="main-container__text">Занялся собой? Займись котом!</p>
           <img class="main-container__image-food" src="img/index/index-can-mobile-food.png" width="280" height="270" alt="Упаковка питания Кэт Энерджи.">
-          <a class="main-container__button-form button" href="form.html">Подобрать программу</a>
+          <a class="main-container__button-form button" href="form.html"><span>Подобрать программу</span></a>
         </div>
       </div>
       <section class="weight">
@@ -62,12 +62,12 @@
         </div>
         <div class="weight__wrapper weight__wrapper--gain">
           <h2 class="weight__title">Набор массы</h2>
-          <p class="weight__excerpt">Заработать авторитет среди дворовых котов и даже собак?
+          <p class="weight-excerpt">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="weight__link-catalog" href="catalog.html">
             <span class="weight__name-catalog">Kаталог pro</span>
-            <svg aria-hidden="true" focusable="false" width="32" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000"/></svg>
+            <svg class="weight__link-image" aria-hidden="true" focusable="false" width="32" height="12" viewBox="0 0 24 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.2V.8L24 6Z"/></svg>
           </a>
         </div>
       </section>
@@ -76,19 +76,19 @@
           <h2 class="description__title">Как это работает</h2>
           <ol class="description__list">
             <li class="description__item description__item--leaf">
-              Функциональное питание содержит только полезные
-                питательные вещества.
+              <p>Функциональное питание содержит только полезные
+                питательные вещества.</p>
             </li>
             <li class="description__item description__item--tub">
-              Выпускается в виде порошка, который нужно лишь залить
-              кипятком и готово.
+              <p>Выпускается в виде порошка, который нужно лишь залить
+              кипятком и готово.</p>
             </li>
             <li class="description__item description__item--eat">
-              Замените один-два приема обычной еды на наше
-              функциональное питание.
+              <p>Замените один-два приема обычной еды на наше
+              функциональное питание.</p>
             </li>
             <li class="description__item description__item--alarm">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ol>
         </div>
@@ -100,28 +100,26 @@
             просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
             При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example-result__value counter">
-            <dl class="example-result__list counter__list">
-              <dt class="examle-result__number counter__number">5 кг</dt>
-              <dd class="example-result__description">снижение<br> веса</dd>
+            <dl class="counter__list">
+              <dt class="counter__number">5 кг</dt>
+              <dd class="counter__description">снижение<br> веса</dd>
             </dl>
-            <dl class="example-result__list counter__list">
-              <dt class="examle-result__number counter__number">60 дней</dt>
-              <dd class="example-result__description">затрачено времени</dd>
+            <dl class="counter__list">
+              <dt class="counter__number">60 дней</dt>
+              <dd class="counter__description">затрачено времени</dd>
             </dl>
           </div>
           <p class="example-result__cost">Затраты на питание:
             15 000 РУБ.</p>
           <img class="example-result__cat-before range__toggle-min--current" src="img/index/before-cat-mobile.png" width="280px" height="232px" alt="Толстый кот до правильного питания.">
+          <img class="example-result__double-cat" src="img/index/image-double-cat.png" width="592px" height="511px" alt="Сравнение двух котов до и после правильного питания.">
           <div class="example-result__range range">
             <span>Было</span>
             <div class="range__scale">
               <div class="range__bar" style="left: 0;
                 width: 36px;">
-                <button class="range__toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную величину веса кота.</span>
-                </button>
-                <button class="range__toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную величину веса кота.</span>
+                <button class="range__toggle" type="button">
+                  <span class="visually-hidden">Показать вес кота веса кота.</span>
                 </button>
               </div>
             </div>
