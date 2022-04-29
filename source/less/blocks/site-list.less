@@ -1,25 +1,117 @@
 .site-list {
-  position: absolute;
-  right: -15px;
-  top: 20px;
+  padding: 0;
+  margin: 0;
+  margin-top: 17px;
+  list-style-type: none;
   width: 320px;
   min-height: 198px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    position: static;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: baseline;
     min-height: 0;
     width: 440px;
     padding: 0;
+    margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    &--light-text li {
+      color: @base-color;
+      background-color: transparent;
+    }
   }
 }
 
-.site-list__link-item {
+.site-list a {
+  font-family: @font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: @black-color;
+  background-color: @base-color;
+  display: block;
+  padding: 22px 69px;
+  padding-bottom: 24px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
+  border-top: 1px solid @lightgrey-line;
+  text-align: center;
+
+  &:last-child {
+    border-bottom: 1px solid @lightgrey-line;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: none;
+    font-family: @font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    &:last-child {
+      border: none;
+    }
+
+    &:hover {
+      color: @black-color;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: @desktop-width) {
+      &:hover {
+        color: @base-color;
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.site-list__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 35px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -8px;
+        height: 2px;
+        background-color: @decorate-background-color;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-color: @base-color;
+    }
+  }
 }
