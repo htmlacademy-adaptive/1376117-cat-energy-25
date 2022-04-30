@@ -4,6 +4,11 @@
     position: absolute;
     top: 0;
     z-index: 5;
+
+    &--static {
+      position: static;
+      z-index: 0;
+    }
   }
 }
 
@@ -23,8 +28,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1440px;
     min-height: 109px;
+    padding: 0 110px;
   }
 }
 

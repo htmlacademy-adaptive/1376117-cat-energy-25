@@ -1,4 +1,6 @@
 .cat-products__wrapper {
+  border-bottom: 1px solid @border-catalog-color;
+
   @media (min-width: @desktop-width) {
     padding: 0 110px;
   }
@@ -30,6 +32,7 @@
 
 .cat-products__item {
   padding: 11px 20px 14px;
+  border-top: 1px solid @border-catalog-color;
   display: grid;
   grid-template-rows: 14px 27px 18px auto 22px 40px;
   grid-template-columns: 27px auto 27px 77px 65px;
@@ -98,6 +101,7 @@
 .cat-products__button-form {
   grid-column: 1/-1;
   grid-row: 6;
+  padding: 10px;
 
   @media (min-width: @tablet-width) {
     grid-row: 7/8;
@@ -111,6 +115,7 @@
 .cat-products__item-more {
   width: 280px;
   padding: 0 20px;
+  border-top: 1px solid @border-catalog-color;
 
   @media (min-width: @tablet-width) {
     width: 249px;
