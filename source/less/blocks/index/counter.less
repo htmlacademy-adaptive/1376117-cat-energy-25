@@ -15,7 +15,7 @@
   line-height: 24px;
   color: @black-color;
   padding: 14px 20px 17px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid @range-color;
   border-radius: 4%;
 }
 
@@ -37,6 +37,10 @@
       width: 114px;
       left: 10%;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @block-background-color;
   }
 }
 

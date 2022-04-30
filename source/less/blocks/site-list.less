@@ -5,6 +5,8 @@
   list-style-type: none;
   width: 320px;
   min-height: 198px;
+  position: absolute;
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -14,6 +16,7 @@
     width: 440px;
     padding: 0;
     margin-top: 30px;
+    position: static;
   }
 
   @media (min-width: @desktop-width) {
@@ -77,10 +80,6 @@
         opacity: 0.3;
       }
     }
-  }
-
-  @media (min-width: @desktop-width) {
-
   }
 }
 

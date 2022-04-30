@@ -208,10 +208,28 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-right: 57px;
+  cursor: pointer;
+  background: url("../img/index/short-arrow.svg") no-repeat 100px 7px;
+
+  &:hover {
+    background: url("../img/index/longer-arrow.svg") no-repeat 100px 7px;
+  }
+
+  &:active {
+    opacity: @opacity-active;
+    background: url("../img/index/longer-arrow.svg") no-repeat 100px 7px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1.5;
+    background-position: 125px 9px;
+
+    &:hover,
+    &:active {
+      background-position: 125px 9px;
+    }
   }
 }
 
