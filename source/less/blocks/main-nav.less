@@ -82,8 +82,35 @@
   &--dark-text .site-list__link-item {
     color: @contacts-color;
   }
-}
 
-// .main-nav__wrapper {
-//   position: relative;
-// }
+  @media (min-width: @tablet-width) {
+    &--dark-text .site-list__link-item {
+      &:hover {
+        color: @black-color;
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--dark-text .site-list__item {
+      &--current {
+        position: relative;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -8px;
+        height: 2px;
+        background-color: @decorate-background-color;
+      }
+    }
+  }
+}
