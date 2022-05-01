@@ -1,6 +1,11 @@
 .main-inner {
   padding: 27px 0 35px;
   border-top: 1px solid @weight-line-decoration;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 0 76px;
+    border-top: none;
+  }
 }
 
 .main-inner__title {
@@ -8,10 +13,16 @@
   font-family: @font;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   color: @black-color;
   margin-bottom: 49px;
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 82px;
+    padding: 0 30px;
+    font-size: 60px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 110px;

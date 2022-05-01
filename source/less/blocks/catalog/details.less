@@ -1,4 +1,10 @@
 .details__food {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @range-color;
+    padding-top: 5px;
+    padding-bottom: 9px;
+  }
 }
