@@ -1,3 +1,11 @@
+.main-footer {
+  min-height: 236px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 150px;
+  }
+}
+
 .main-footer__wrapper {
   width: 320px;
   margin: 0 auto 20px;
@@ -33,8 +41,11 @@
 
 .main-footer__logo {
   display: block;
-  margin: 39px auto 52px;
+  margin: 39px auto 0;
   fill: @contacts-color;
+  width: 280px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid @weight-line-decoration;
 
   &:hover {
     opacity: 0.8;
@@ -47,6 +58,9 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     display: inline;
+    width: auto;
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 }
 

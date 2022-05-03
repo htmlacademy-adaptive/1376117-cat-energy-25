@@ -2,6 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 280px;
+  padding-top: 22px;
+  border-top: 1px solid @weight-line-decoration;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    padding: 0;
+    border-top: none;
+  }
 }
 
 .copyright__link {
