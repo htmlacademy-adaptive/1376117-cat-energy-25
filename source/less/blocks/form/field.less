@@ -1,0 +1,29 @@
+.field {
+  margin: 0;
+  padding-left: 15px;
+  background-color: @base-color;
+  border: 1px solid @border-color-field;
+  min-height: 45px;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: @range-color;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid @base-font-color;
+  }
+
+  &:focus:invalid {
+    border: 2px solid @border-color-error;
+  }
+
+  &::placeholder {
+    color: @base-font-color;
+    font-family: @font;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}

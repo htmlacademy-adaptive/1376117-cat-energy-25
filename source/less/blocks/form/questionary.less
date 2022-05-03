@@ -6,7 +6,9 @@
 
 .questionary__cat-info {
   border: none;
-  text-transform: uppercase;
+  border-bottom: 1px solid @weight-line-decoration;
+  padding: 0 20px 11px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -16,10 +18,48 @@
   }
 }
 
+.questionary__form-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+.questionary__field-name {
+  margin-right: 12px;
+  text-transform: uppercase;
+}
+
+.questionary__field {
+  &--name {
+    width: 228px;
+  }
+
+  &--weight {
+    width: 204px;
+  }
+
+  &--age {
+    width: 172px;
+  }
+
+  &--mail {
+    width: 219px;
+  }
+
+  &--phone {
+    width: 204px;
+  }
+}
+
 .questionary__program-selection {
   border: none;
+  border-bottom: 1px solid @weight-line-decoration;
   text-transform: uppercase;
   color: @extra-block-font-color;
+  padding: 22px 20px 19px;
+  margin: 0;
+  margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -41,6 +81,21 @@
 }
 
 .guestionary__contacts-form {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -73px;
+    background-color: @decorate-background-color;
+    height: 2px;
+    width: 30%;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
@@ -53,9 +108,7 @@
 }
 
 .questionary__contacts-wrap {
-  label {
-    display: block;
-  }
+  padding: 0 20px;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -65,6 +118,17 @@
 .questionary__comment {
   padding: 0;
   margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -46px;
+    background-color: @decorate-background-color;
+    height: 2px;
+    width: 50%;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -74,10 +138,11 @@
 }
 
 .questionary__subtitle-form {
+  margin: 0 0 35px;
+  padding: 0 113px 0 20px;
   font-size: 24px;
   line-height: 26px;
   color: @black-color;
-  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -88,7 +153,20 @@
 
 .questionary__textarea {
   width: 280px;
+  min-height: 150px;
   box-sizing: border-box;
+  margin: 0 20px 23px;
+  padding: 9px 12px 9px 15px;
+  border: 1px solid @border-color-field;
+
+  &::placeholder {
+    font-family: @font;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @base-font-color;
+    background-color: @base-color;
+  }
 
   @media (min-width: @tablet-width) {
     width: 631px;
@@ -100,6 +178,20 @@
 }
 
 .questionary__extra-form {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -46px;
+    background-color: @decorate-background-color;
+    height: 2px;
+    width: 42%;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
@@ -114,7 +206,7 @@
   list-style-type: none;
   color: @black-color;
   text-transform: uppercase;
-  padding: 0;
+  padding: 0 20px;
 
   @media (min-width: 768px) {
     margin-top: -19px;
@@ -135,5 +227,13 @@
   font-size: 14px;
   line-height: 16px;
   color: @black-color;
-  align-items: center;
+  display: block;
+  text-align: center;
+}
+
+.questionary__button-apply {
+  display: block;
+  margin: 34px auto 21px;
+  padding: 7px 44px;
+  width: 280px;
 }
