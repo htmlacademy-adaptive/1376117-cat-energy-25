@@ -8,6 +8,13 @@
   border: 1px solid @range-color;
   box-sizing: border-box;
   border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 426px;
+    background-color: @background-scale;
+    height: 6px;
+    border: none;
+  }
 }
 
 .range__bar {
@@ -17,4 +24,74 @@
   position: absolute;
   margin-left: 6px;
   margin-top: 3px;
+}
+
+.range__toggle {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 8px;
+    height: 6px;
+    background-color: @decorate-background-color;
+    border: none;
+    border-radius: 50%;
+    outline: 1px solid @range-color;
+    outline-offset: 13px;
+    left: 209px;
+    top: -3px;
+  }
+}
+
+.range__cat-before {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.range__double-cat {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 25px;
+
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+    }
+  }
+}
+
+.range__text {
+  display: inline-block;
+
+  &:first-of-type {
+    margin-left: 35px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+    border-bottom: 1px dotted @underline-range-color;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:hover {
+      border-bottom: 1px solid @black-color-opacity;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
 }

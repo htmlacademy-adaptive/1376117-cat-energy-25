@@ -8,5 +8,26 @@
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
-  color: inherit;
+  color: @base-font-color;
+  display: flex;
+  align-items: center;
+
+  &--icon {
+    fill: @icons-color;
+    margin-left: 139px;
+
+    &:hover {
+      fill: @decorate-background-color;
+    }
+  }
+
+  &:active {
+    color: @icons-color-opacity;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--icon {
+      margin-left: 22px;
+    }
+  }
 }

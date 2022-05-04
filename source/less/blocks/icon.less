@@ -1,9 +1,21 @@
-.icon__logo {
-  display: inline-block;
-  margin-left: 57px;
-  margin-right: 65px;
+.icon {
+  display: flex;
+  width: 90px;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+  }
+}
+
+.icon__logo {
+  margin-left: 57px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 19px;
   }
 }

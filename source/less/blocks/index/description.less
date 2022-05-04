@@ -1,5 +1,12 @@
 .description__wrapper {
   margin-bottom: 49px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 30px;
+    padding-bottom: 47px;
+    margin: 0;
+  }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
@@ -15,6 +22,13 @@
   line-height: 40px;
   color: @black-color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
 }
 
 .description__list {
@@ -82,12 +96,45 @@
 
   @media (min-width: @tablet-width) {
     width: 250px;
+    min-height: 280px;
     padding: 0;
     margin-right: 133px;
     margin-bottom: 37px;
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &--leaf {
+      background: url("../img/numbers/picture-number-one.svg") no-repeat 75% 60%;
+      height: 280px;
+    }
+
+    &--tub {
+      background: url("../img/numbers/picture-number-two.svg") no-repeat 75% 60%;
+      height: 280px;
+    }
+
+    &--eat {
+      background: url("../img/numbers/picture-number-three.svg") no-repeat 75% 60%;
+      height: 280px;
+    }
+
+    &--alarm {
+      background: url("../img/numbers/picture-number-four.svg") no-repeat 75% 60%;
+      height: 280px;
+    }
+
+    &::before {
+      height: 80px;
+      width: 80px;
+      left: 0;
+      top: 37px;
+    }
+
+    &::after {
+      left: 25px;
+      top: 60px;
     }
   }
 
@@ -103,5 +150,15 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.description__item p {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 151px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }

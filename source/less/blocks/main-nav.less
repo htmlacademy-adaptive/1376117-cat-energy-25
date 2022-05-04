@@ -1,16 +1,5 @@
 .main-nav {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  &--close {
-    background: url("../img/header/button-toggle-mobile.svg") no-repeat;
-    background-size: 100% 100%;
-    width: 24px;
-    height: 16px;
-    border: none;
-  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -19,52 +8,82 @@
 }
 
 .main-nav__toggle {
-  background: url("../img/header/mobile-button-close.svg") no-repeat;
-  width: 25px;
-  height: 25px;
+  padding: 0;
+  position: absolute;
+  top: -25px;
+  left: 280px;
+  width: 24px;
+  height: 16px;
   display: block;
   border: none;
   cursor: pointer;
+  background-color: @base-color;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.main-nav--close .main-nav__list {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
+.main-nav--close .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: @black-color;
+    box-shadow: 0 6px 0 0 @black-color, 0 13px 0 0 @black-color;
   }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: -40px;
+  left: 280px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: @black-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--close .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__wrapper {
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
 }
 
 .main-nav__list {
-  font-family: @font;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  color: @black-color;
-  background-color: @base-color;
-  list-style-type: none;
-
-  @media (min-width: @tablet-width) {
-    font-family: @font;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-family: @font;
-    font-size: 20px;
-    line-height: 30px;
-    color: @base-color;
-    background-color: transparent;
-    text-transform: uppercase;
-
-    &--dark-text {
-      color: @contacts-color;
-    }
+  &--dark-text .site-list__link-item {
+    color: @contacts-color;
   }
 }
+
+// .main-nav__wrapper {
+//   position: relative;
+// }

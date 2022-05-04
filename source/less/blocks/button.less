@@ -13,6 +13,14 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  &:hover {
+    background-color: @state-background-color;
+  }
+
+  &:active {
+    color: @opacity-active-color;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
   }
