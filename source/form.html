@@ -88,54 +88,60 @@
               </ul>
             </fieldset>
             <fieldset class="guestionary__contacts-form">
-              <legend class="questionary__subtitle-form">Контактные данные (владельца кота)</legend>
               <div class="questionary__contacts-wrap">
-                <label class="questionary__form-label">
-                  <span class="questionary__field-name">E-mail:<sup>*</sup></span>
-                  <input class="questionary__field questionary__field--mail field" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-                </label>
-                <label class="questionary__form-label">
-                  <span class="questionary__field-name">Телефон:<sup>*</sup></span>
-                  <input class="questionary__field questionary__field--phone field" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
-                </label>
+                <h2 class="questionary__subtitle-form">Контактные данные<br> (владельца кота)</h2>
+                <div class="questionary__contacts-container">
+                  <label class="questionary__form-label">
+                    <span class="questionary__field-name">E-mail:<sup>*</sup></span>
+                    <input class="questionary__field questionary__field--mail field" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  </label>
+                  <label class="questionary__form-label">
+                    <span class="questionary__field-name">Телефон:<sup>*</sup></span>
+                    <input class="questionary__field questionary__field--phone field" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                  </label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="questionary__comment">
-              <legend class="questionary__subtitle-form">Комментарий</legend>
-              <textarea class="questionary__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" rows="10"></textarea>
+              <div class="questionary__comment-wrap">
+                <h2 class="questionary__subtitle-form">Комментарий</h2>
+                <textarea class="questionary__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" rows="10"></textarea>
+              </div>
             </fieldset>
             <fieldset class="questionary__extra-form">
-              <legend class="questionary__subtitle-form">Дополнительно</legend>
-              <ul class="questionary__list">
-                <li class="questionary__item">
-                  <label class="questionary__control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="additional-item" value="sweetener" checked>
-                    <span class="control__mark"></span>
-                    <span class="control__label">Сахарозаменитель</span>
-                  </label>
-                </li>
-                <li class="questionary__item">
-                  <label class="questionary__control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="additional-item" value="water">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Питьевая вода</span>
-                  </label>
-                </li>
-                <li class="questionary__item">
-                  <label class="questionary__control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="additional-item" value="milk">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Молоко</span>
-                  </label>
-                </li>
-                <li class="questionary__item">
-                  <label class="questionary__control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="additional-item" value="vitamins">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Витамины</span>
-                  </label>
-                </li>
-              </ul>
+              <div class="questionary__extra-wrap">
+                <h2 class="questionary__subtitle-form">Дополнительно</h2>
+                <ul class="questionary__list">
+                  <li class="questionary__item">
+                    <label class="questionary__control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="additional-item" value="sweetener" checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">Сахарозаменитель</span>
+                    </label>
+                  </li>
+                  <li class="questionary__item">
+                    <label class="questionary__control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="additional-item" value="water">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Питьевая вода</span>
+                    </label>
+                  </li>
+                  <li class="questionary__item">
+                    <label class="questionary__control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="additional-item" value="milk">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Молоко</span>
+                    </label>
+                  </li>
+                  <li class="questionary__item">
+                    <label class="questionary__control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="additional-item" value="vitamins">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Витамины</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
             <button class="questionary__button-apply button" type="submit">Отправить заявку</button>
           </form>

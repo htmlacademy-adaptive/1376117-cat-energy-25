@@ -4,12 +4,25 @@
   align-items: center;
   width: 280px;
   padding-top: 22px;
-  border-top: 1px solid @weight-line-decoration;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 88%;
+    height: 1px;
+    background-color: @weight-line-decoration;
+    top: 0;
+    left: 20px;
+  }
 
   @media (min-width: @tablet-width) {
     width: auto;
     padding: 0;
-    border-top: none;
+
+    &::before {
+      width: 0;
+    }
   }
 }
 
