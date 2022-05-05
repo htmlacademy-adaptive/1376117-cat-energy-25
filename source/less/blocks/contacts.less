@@ -15,6 +15,10 @@
     z-index: 1;
     top: 95px;
     left: 110px;
+
+    &--extra-page {
+      background-color: @base-color;
+    }
   }
 
   &--main-page {
@@ -46,5 +50,13 @@
     width: 160px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+}
+
+.contacts__text span {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-top: 16px;
   }
 }

@@ -1,27 +1,43 @@
 .main-form__wrapper {
-  width: 280px;
+  width: 320px;
   font-family: @font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding: 27px 20px 32px;
+  padding: 27px 0 32px;
+  border-top: 1px solid @weight-line-decoration;
+
+  &:hover {
+    border-color: @range-color;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid @base-font-color;
+  }
+
+  &:focus:invalid {
+    border: 2px solid @border-color-error;
+  }
 
   @media (min-width: @tablet-width) {
-    width: 633px;
-    padding-left: 40px;
-    padding-right: 35px;
+    width: 768px;
+    padding: 63px 0 72px 0;
     padding-bottom: 72px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 77px 110px 80px;
+    width: 1440px;
+    padding: 77px 0 80px;
+    margin: 0 auto;
   }
 }
 
 .main-form__title {
   margin: 0;
   margin-bottom: 37px;
+  padding-left: 20px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -29,13 +45,20 @@
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
+    padding-left: 69px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
   }
 }
 
 .main-form__text {
   margin: 0;
   margin-bottom: 39px;
+  padding-left: 20px;
   font-size: 14px;
   line-height: 18px;
   color: @black-color;
@@ -44,5 +67,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 0 70px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
   }
 }
