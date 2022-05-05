@@ -196,14 +196,25 @@
 
 .extra-goods__benefit {
   background-image: url("../img/catalog/cat-in-backpack.jpg");
+  background-repeat: no-repeat;
   width: 280px;
   height: 290px;
   margin-top: 35px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/catalog/cat-in-backpack@2x.jpg");
+    background-size: contain;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/catalog/cat-in-backpack-tablet.png");
     width: 707px;
     height: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/catalog/cat-in-backpack-tablet@2x.jpg");
+      background-size: contain;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -213,6 +224,11 @@
     height: 289px;
     margin-top: 0;
     margin-left: -5px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/catalog/cat-in-backpack@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 

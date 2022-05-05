@@ -21,6 +21,12 @@
   background-repeat: no-repeat;
   margin-bottom: 27px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, @opacity-background-color 300px, @base-color 300px),
+      url("../img/index/index-background@2x.jpg");
+    background-size: contain;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: none;
   }
@@ -43,6 +49,10 @@
       right: 0;
       background-size: cover;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/cat-background-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -137,6 +147,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-left: 25px;
     position: absolute;
     top: 292px;
     left: 90px;
