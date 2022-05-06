@@ -24,6 +24,10 @@
   position: absolute;
   margin-left: 6px;
   margin-top: 3px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .range__toggle {
@@ -34,15 +38,33 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 8px;
-    height: 6px;
-    background-color: @decorate-background-color;
-    border: none;
+    width: 33px;
+    height: 33px;
+    background-color: @base-color;
+    border: 1px solid @range-color;
     border-radius: 50%;
-    outline: 1px solid @range-color;
-    outline-offset: 13px;
     left: 209px;
-    top: -3px;
+    top: -17px;
+    box-shadow: 0 1px 3px @shadow-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: @decorate-background-color;
+      border-radius: 50%;
+      top: 39%;
+      left: 38%;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px @shadow-color-hover;
+    }
+
+    &:active {
+      border-color: @decorate-background-color;
+    }
   }
 }
 
