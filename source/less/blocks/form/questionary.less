@@ -7,14 +7,14 @@
 .questionary__cat-info {
   border: none;
   border-bottom: 1px solid @weight-line-decoration;
-  padding: 0 20px 11px;
+  padding: 0 20px 21px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     margin: 0;
-    margin-bottom: 66px;
+    margin-bottom: 72px;
     padding: 0 67px 0 71px;
     border-bottom: none;
   }
@@ -30,7 +30,8 @@
 .questionary__form-label {
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  justify-content: space-between;
+  margin-bottom: 15px;
   position: relative;
 
   &:last-child {
@@ -46,6 +47,7 @@
 
 .questionary__field-name {
   margin-right: 12px;
+  margin-bottom: 5px;
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
@@ -67,7 +69,7 @@
   }
 
   &--mail {
-    width: 219px;
+    width: 220px;
   }
 
   &--phone {
@@ -110,7 +112,7 @@
     }
 
     &--mail {
-      width: 467px;
+      width: 486px;
     }
 
     &--phone {
@@ -119,19 +121,53 @@
   }
 }
 
+.questionary__icon {
+  position: absolute;
+  right: 16px;
+  top: 30%;
+
+  &--envelope {
+    fill: none;
+    stroke: @extra-block-font-color;
+
+    &:focus {
+      stroke: @decorate-background-color;
+      outline: none;
+    }
+
+    &:invalid {
+      stroke: @border-color-error;
+    }
+  }
+
+  &--handset {
+    fill: @black-color;
+  }
+
+  @media (min-width: @tablet-width) {
+    right: 18px;
+    top: 34%;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 16px;
+    top: 31%;
+  }
+}
+
 .questionary__program-selection {
   border: none;
   border-bottom: 1px solid @weight-line-decoration;
   text-transform: uppercase;
   color: @extra-block-font-color;
-  padding: 22px 20px 19px;
+  padding: 28px 20px 0;
   margin: 0;
   margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     padding: 30px 28px 14px;
     margin-left: 71px;
-    margin-bottom: 71px;
+    margin-bottom: 65px;
     border-bottom: none;
     border: 1px solid @border-color-field;
     width: 574px;
@@ -141,8 +177,9 @@
     position: absolute;
     top: 10px;
     left: 800px;
-    margin: -10px 110px 65px 0;
-    width: 570px;
+    margin: -10px 110px 65px -40px;
+    padding-bottom: 27px;
+    width: 510px;
   }
 }
 
@@ -215,7 +252,8 @@
 
 .questionary__contacts-wrap span {
   @media (min-width: @desktop-width) {
-    margin-right: 20px;
+    margin-right: 17px;
+    margin-left: 3px;
   }
 }
 
@@ -241,7 +279,7 @@
     margin-bottom: 65px;
 
     &::after {
-      top: 9%;
+      top: 8%;
     }
   }
 
@@ -252,7 +290,7 @@
 
 .questionary__subtitle-form {
   margin: 0 0 35px;
-  padding: 0 14px 0 20px;
+  padding: 0 23px 0 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -265,7 +303,12 @@
     line-height: 36px;
     margin-bottom: 76px;
     padding: 0 40px;
-    margin-left: 40px;
+    margin-left: 28px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-top: -3px;
   }
 }
 
@@ -340,12 +383,14 @@
     margin-bottom: 61px;
 
     &::after {
-      top: 10%;
+      top: 15%;
     }
   }
 }
 
 .questionary__list {
+  margin: 0;
+  margin-top: 4px;
   list-style-type: none;
   color: @black-color;
   text-transform: uppercase;
@@ -355,14 +400,15 @@
     margin-top: -19px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 124px;
-    padding: 25px 67px 0 70px;
+    gap: 19px 58px;
+    padding: 5px 67px 0 70px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     padding: 0 110px;
-    margin-top: 5px;
+    margin-top: -14px;
+    column-gap: 81px;
   }
 }
 
@@ -385,30 +431,36 @@
     font-size: 16px;
     line-height: 1;
     position: absolute;
-    right: 140px;
-    bottom: 82px;
+    right: 175px;
+    bottom: 90px;
   }
 
   @media (min-width: @desktop-width) {
     right: 35%;
-    top: 93%;
+    top: 92%;
   }
 }
 
 .questionary__button-apply {
   display: block;
-  margin: 34px auto 21px;
-  padding: 7px 44px;
+  margin: 15px auto 21px;
+  padding: 10px 44px;
   width: 280px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
     padding: 14px 35px;
-    margin: 54px auto 0 71px;
+    margin: 37px auto 0 71px;
+    font-size: 20px;
+    line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
     width: 568px;
-    padding: 13px 50px;
+    padding: 15px 50px;
     margin-left: 110px;
+    margin-top: 67px;
+    margin-bottom: 4px;
   }
 }

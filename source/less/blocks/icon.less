@@ -1,23 +1,56 @@
 .icon {
   display: flex;
   width: 90px;
-  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+  }
 }
 
 .icon__logo {
   margin-left: 57px;
+  margin-top: 14px;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
+.icon__logo-tablet {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.icon__logo-desktop {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    margin-top: 56px;
+  }
+}
+
 .icon__image {
   @media (min-width: @tablet-width) {
-    width: 174px;
-    height: 52px;
-    margin-top: 37px;
+    display: none;
+  }
+}
 
+.icon__state {
+  @media (min-width: @tablet-width) {
     &:hover {
       opacity: 0.8;
     }
@@ -25,10 +58,5 @@
     &:active {
       opacity: 0.6;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 202px;
-    height: 60px;
   }
 }

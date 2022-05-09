@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: linear-gradient(to bottom, @base-color 30%, @block-background-color 30%);
+    background-image: linear-gradient(to bottom, @base-color 27%, @block-background-color 27%);
     border-top: none;
   }
 }
@@ -14,22 +14,21 @@
 .example-result__wrapper {
   width: 280px;
   background-color: @block-example-result-color;
-  padding: 25px 20px 40px;
+  padding: 27px 20px 44px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 43px;
-    padding-bottom: 45px;
+    padding: 44px 30px 50px;
     width: 768px;
     box-sizing: border-box;
     background-color: transparent;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
     margin: 0 auto;
-    padding: 26px 110px 65px;
+    padding: 26px 110px 100px;
     box-sizing: border-box;
-    position: relative;
   }
 }
 
@@ -49,7 +48,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 43px;
+    margin-top: 14px;
     margin-bottom: 146px;
   }
 }
@@ -57,7 +56,7 @@
 .example-result__value {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     width: 366px;
@@ -66,24 +65,24 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
   }
 }
 
 .example-result__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 1.5;
     width: 708px;
-    margin-bottom: 54px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
     width: 436px;
-    margin-bottom: 69px;
+    margin-bottom: 55px;
   }
 }
 
@@ -98,12 +97,13 @@
   @media (min-width: @tablet-width) {
     margin: 0 85px;
     padding-bottom: 10px;
+    width: 595px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -2px;
+    right: -5px;
     padding-bottom: 0;
   }
 }
@@ -116,12 +116,15 @@
   text-transform: uppercase;
   text-align: center;
   color: @black-color;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     display: inline-block;
     font-size: 20px;
-    margin-left: 167px;
+    line-height: 1.5;
+    margin-left: 168px;
     text-align: right;
+    position: absolute;
   }
 
   @media (min-width: @desktop-width) {
@@ -129,7 +132,7 @@
     display: block;
     white-space: pre;
     margin: 0;
-    margin-left: -120px;
+    margin-left: -110px;
   }
 }
 

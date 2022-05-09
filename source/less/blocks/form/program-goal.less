@@ -3,3 +3,17 @@
   padding: 0;
   list-style-type: none;
 }
+
+.program-goal__item {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

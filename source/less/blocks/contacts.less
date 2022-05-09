@@ -39,12 +39,19 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 200px;
+    padding-top: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 4px;
   }
 }
 
 .contacts__text {
   margin: 0;
   width: 139px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
     width: 160px;
@@ -52,11 +59,16 @@
     line-height: 20px;
     text-align: right;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-left: 55px;
+  }
 }
 
 .contacts__text span {
   @media (min-width: @tablet-width) {
     display: inline-block;
-    margin-top: 16px;
+    margin-top: 20px;
   }
 }

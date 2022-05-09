@@ -2,6 +2,7 @@
   display: inline-block;
   width: 86px;
   margin: 0 13px;
+  margin-right: 16px;
   position: relative;
   height: 14px;
   background-color: @base-color;
@@ -14,6 +15,8 @@
     background-color: @background-scale;
     height: 6px;
     border: none;
+    top: -4px;
+    left: 6px;
   }
 }
 
@@ -43,7 +46,7 @@
     background-color: @base-color;
     border: 1px solid @range-color;
     border-radius: 50%;
-    left: 209px;
+    left: 195px;
     top: -17px;
     box-shadow: 0 1px 3px @shadow-color;
 
@@ -71,7 +74,7 @@
 .range__cat-before {
   display: inline-block;
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -83,8 +86,9 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    margin-top: 80px;
-    margin-bottom: 25px;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    margin-left: -25px;
 
     @media (min-width: @desktop-width) {
       margin-top: 0;
@@ -97,16 +101,17 @@
   cursor: pointer;
 
   &:first-of-type {
-    margin-left: 35px;
+    margin-left: 40px;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1.5;
     border-bottom: 1px dotted @underline-range-color;
+    margin-left: 13px;
 
     &:first-of-type {
-      margin-left: 0;
+      margin-left: -15px;
     }
 
     &:hover {

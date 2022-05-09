@@ -38,7 +38,7 @@
     width: 88%;
     height: 1px;
     background-color: @weight-line-decoration;
-    top: 38%;
+    top: 40%;
     left: 20px;
   }
 
@@ -47,7 +47,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 63px 30px 50px;
+    padding: 60px 30px 53px;
 
     &::after {
       width: 0;
@@ -67,10 +67,10 @@
 
 .main-footer__logo {
   display: block;
-  margin: 39px auto 0;
+  margin: 40px auto 0;
   fill: @contacts-color;
   width: 280px;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
 
   &:hover {
     opacity: 0.8;
@@ -86,6 +86,10 @@
     width: auto;
     padding-bottom: 0;
     margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }
 
