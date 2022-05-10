@@ -129,15 +129,6 @@
   &--envelope {
     fill: none;
     stroke: @extra-block-font-color;
-
-    &:focus {
-      stroke: @decorate-background-color;
-      outline: none;
-    }
-
-    &:invalid {
-      stroke: @border-color-error;
-    }
   }
 
   &--handset {
@@ -155,6 +146,26 @@
   }
 }
 
+.questionary__field:focus + .questionary__icon {
+  &--envelope {
+    stroke: @decorate-background-color;
+  }
+
+  &--handset {
+    fill: @decorate-background-color;
+  }
+}
+
+.questionary__field:focus:invalid + .questionary__icon {
+  &--envelope {
+    stroke: @border-color-error;
+  }
+
+  &--handset {
+    fill: @border-color-error;
+  }
+}
+
 .questionary__program-selection {
   border: none;
   border-bottom: 1px solid @weight-line-decoration;
@@ -165,9 +176,9 @@
   margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    padding: 30px 28px 14px;
+    padding: 30px 28px 5px;
     margin-left: 71px;
-    margin-bottom: 65px;
+    margin-bottom: 75px;
     border-bottom: none;
     border: 1px solid @border-color-field;
     width: 574px;
@@ -306,7 +317,7 @@
     margin-left: 28px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     margin-left: 70px;
     margin-top: -3px;
   }
@@ -400,7 +411,7 @@
     margin-top: -19px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 19px 58px;
+    gap: 41px 58px;
     padding: 5px 67px 0 70px;
   }
 
@@ -451,7 +462,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 14px 35px;
-    margin: 37px auto 0 71px;
+    margin: 60px auto 0 71px;
     font-size: 20px;
     line-height: 1;
   }
