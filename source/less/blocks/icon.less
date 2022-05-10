@@ -2,20 +2,33 @@
   display: flex;
   width: 90px;
   align-items: center;
-
-  @media (min-width: @tablet-width) {
-    width: 174px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 202px;
-  }
 }
 
 .icon__logo {
   margin-left: 57px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 19px;
+    display: none;
+  }
+}
+
+.icon__image {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+    margin-top: 37px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 60px;
   }
 }

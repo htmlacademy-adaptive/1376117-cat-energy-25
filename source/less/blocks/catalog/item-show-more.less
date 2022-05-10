@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .item-show-more__link-item {
@@ -80,5 +84,7 @@
 .item-show-more__image {
   @media (min-width: @tablet-width) {
     cursor: pointer;
+    width: 60px;
+    height: 60px;
   }
 }

@@ -27,6 +27,7 @@
   @media (min-width: @tablet-width) {
     padding-left: 67px;
     padding-right: 36px;
+    margin-bottom: 80px;
     font-size: 36px;
 
     &::before {
@@ -115,7 +116,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 28px 38px;
+    padding: 27px 37px;
     grid-template-columns: 1fr 132px 48px 45px;
     grid-template-rows: auto 23px 40px;
     row-gap: 0;
@@ -127,6 +128,7 @@
 
     &:last-child {
       border-bottom: none;
+      padding-bottom: 29px;
     }
   }
 
@@ -196,14 +198,29 @@
 
 .extra-goods__benefit {
   background-image: url("../img/catalog/cat-in-backpack.jpg");
+  background-repeat: no-repeat;
   width: 280px;
   height: 290px;
   margin-top: 35px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/catalog/cat-in-backpack@2x.jpg");
+    background-size: contain;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/catalog/cat-in-backpack-tablet.png");
     width: 707px;
     height: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/catalog/cat-in-backpack-tablet@2x.jpg");
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -213,6 +230,11 @@
     height: 289px;
     margin-top: 0;
     margin-left: -5px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/catalog/cat-in-backpack@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
@@ -243,13 +265,13 @@
   @media (min-width: @tablet-width) {
     width: 160px;
     top: 15px;
-    left: 380px;
+    left: 365px;
     text-align: left;
 
     &::before {
       bottom: 0;
       top: 45px;
-      left: -310px;
+      left: -287px;
     }
   }
 
