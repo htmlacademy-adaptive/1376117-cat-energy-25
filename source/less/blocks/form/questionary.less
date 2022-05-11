@@ -7,7 +7,7 @@
 .questionary__cat-info {
   border: none;
   border-bottom: 1px solid @weight-line-decoration;
-  padding: 0 20px 21px;
+  padding: 0 20px 23px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   position: relative;
 
   &:last-child {
@@ -47,7 +47,7 @@
 
 .questionary__field-name {
   margin-right: 12px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
@@ -203,7 +203,7 @@
 .guestionary__contacts-form {
   margin: 0;
   padding: 0;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
   position: relative;
 
   &::before {
@@ -333,10 +333,11 @@
   width: 280px;
   min-height: 150px;
   box-sizing: border-box;
-  margin: 0 20px 23px;
+  margin: 0 20px 26px;
   padding: 9px 12px 9px 15px;
   border: 1px solid @border-color-field;
   resize: none;
+  display: block;
 
   &::placeholder {
     font-family: @font;
@@ -374,7 +375,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 7%;
+    top: 6%;
     background-color: @decorate-background-color;
     height: 2px;
     width: 100%;
@@ -454,7 +455,7 @@
 
 .questionary__button-apply {
   display: block;
-  margin: 15px auto 21px;
+  margin: 16px auto 21px;
   padding: 10px 44px;
   width: 280px;
   font-size: 16px;
@@ -473,5 +474,13 @@
     margin-left: 110px;
     margin-top: 67px;
     margin-bottom: 4px;
+  }
+}
+
+.questionary__control {
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 }
