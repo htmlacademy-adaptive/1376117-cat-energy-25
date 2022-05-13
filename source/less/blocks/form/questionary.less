@@ -79,8 +79,9 @@
   //если поле заполнено с ошибкой, то js добавляет модификатор error
   &--error {
     outline: 2px solid @border-color-error;
+  }
 
-  + .questionary__icon {
+  &--error + .questionary__icon {
     &--envelope {
       stroke: @border-color-error;
     }
