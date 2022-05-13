@@ -76,6 +76,20 @@
     width: 204px;
   }
 
+  //если поле заполнено с ошибкой, то js добавляет модификатор error
+  &--error {
+    outline: 2px solid @border-color-error;
+
+  + .questionary__icon {
+    &--envelope {
+      stroke: @border-color-error;
+    }
+
+    &--handset {
+      fill: @border-color-error;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     &--name {
       width: 567px;
@@ -155,16 +169,6 @@
     fill: @decorate-background-color;
   }
 }
-
-// .questionary__field:focus:invalid + .questionary__icon {
-//   &--envelope {
-//     stroke: @border-color-error;
-//   }
-
-//   &--handset {
-//     fill: @border-color-error;
-//   }
-// }
 
 .questionary__program-selection {
   border: none;
@@ -252,14 +256,34 @@
 
 .questionary__contacts-container .questionary__form-label {
   &:nth-child(1) span {
-    margin: -5px 22px 0 1px;
+    margin: -7px 0 0 1px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(1) span {
+      margin: -6px 0 0 1px;
+    }
+
+    &:nth-child(2) span {
+      margin: -4px 0 0 -2px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) span {
+      margin: -5px 22px 0 1px;
+    }
+
+    &:nth-child(2) span {
+      margin: -3px 18px 0 0;
+    }
   }
 }
 
 .questionary__contacts-wrap label {
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
-    margin-right: 76px;
+    margin-right: 78px;
 
     &:last-child {
       margin-right: 0;
@@ -344,11 +368,11 @@
   border: 1px solid @border-color-field;
   resize: none;
   display: block;
+  font-family: @font;
+  font-size: 16px;
+  line-height: 18px;
 
   &::placeholder {
-    font-family: @font;
-    font-size: 16px;
-    line-height: 18px;
     text-transform: uppercase;
     color: @base-font-color;
     background-color: @base-color;
@@ -359,11 +383,8 @@
     min-height: 174px;
     margin: 0 67px 0 70px;
     padding: 10px 19px;
-
-    &::placeholder {
-      font-size: 20px;
-      line-height: 1.5;
-    }
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   @media (min-width: @desktop-width) {
@@ -381,7 +402,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 8%;
+    top: 6%;
     background-color: @decorate-background-color;
     height: 2px;
     width: 100%;
@@ -408,7 +429,7 @@
 
 .questionary__list {
   margin: 0;
-  margin-top: 4px;
+  margin-top: 3px;
   list-style-type: none;
   color: @black-color;
   text-transform: uppercase;
