@@ -1,43 +1,29 @@
 .field {
   margin: 0;
-  padding-left: 15px;
+  padding: 14px 15px 11px 14px;
   background-color: @base-color;
   border: 1px solid @border-color-field;
-  min-height: 45px;
   box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
 
   &:hover {
     border-color: @range-color;
   }
 
   &:focus {
-    border: none;
     outline: 2px solid @base-font-color;
-  }
-
-  &:focus:invalid {
-    border: 2px solid @border-color-error;
   }
 
   &::placeholder {
     color: @base-font-color;
     font-family: @font;
-    font-size: 16px;
-    line-height: 18px;
     text-transform: uppercase;
   }
 
   @media (min-width: @tablet-width) {
-    min-height: 52px;
-    padding-left: 18px;
-
-    &::placeholder {
-      font-size: 20px;
-      line-height: 1.5;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 12px 19px 8px 19px;
   }
 }

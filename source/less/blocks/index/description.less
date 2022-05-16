@@ -1,10 +1,9 @@
 .description__wrapper {
-  margin-bottom: 49px;
+  margin-bottom: 50px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 15px 30px;
-    padding-bottom: 47px;
+    padding: 15px 30px 5px;
     margin: 0;
   }
 
@@ -21,13 +20,17 @@
   font-size: 36px;
   line-height: 40px;
   color: @black-color;
-  text-transform: uppercase;
+  margin: 22px 0 40px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 2px;
   }
 }
 
@@ -44,7 +47,7 @@
 
 .description__item {
   padding-left: 80px;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   position: relative;
 
   &:last-child {
@@ -106,22 +109,22 @@
     }
 
     &--leaf {
-      background: url("../img/numbers/picture-number-one.svg") no-repeat 75% 60%;
+      background: url("../img/numbers/picture-number-one.svg") no-repeat 70% 65%;
       height: 280px;
     }
 
     &--tub {
-      background: url("../img/numbers/picture-number-two.svg") no-repeat 75% 60%;
+      background: url("../img/numbers/picture-number-two.svg") no-repeat 90% 65%;
       height: 280px;
     }
 
     &--eat {
-      background: url("../img/numbers/picture-number-three.svg") no-repeat 75% 60%;
+      background: url("../img/numbers/picture-number-three.svg") no-repeat 90% 65%;
       height: 280px;
     }
 
     &--alarm {
-      background: url("../img/numbers/picture-number-four.svg") no-repeat 75% 60%;
+      background: url("../img/numbers/picture-number-four.svg") no-repeat 95% 65%;
       height: 280px;
     }
 
@@ -140,15 +143,31 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin-right: 71px;
+    margin-right: 80px;
     margin-bottom: 26px;
+    width: 245px;
 
     &:nth-child(2n) {
-      margin-right: 71px;
+      margin-right: 80px;
     }
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &--leaf {
+      background: url("../img/numbers/picture-number-one.svg") no-repeat 73% 65%;
+      height: 280px;
+    }
+
+    &--eat {
+      background: url("../img/numbers/picture-number-three.svg") no-repeat 95% 65%;
+      height: 280px;
+    }
+
+    &--alarm {
+      background: url("../img/numbers/picture-number-four.svg") no-repeat 100% 65%;
+      height: 280px;
     }
   }
 }
@@ -157,8 +176,16 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 151px;
+    margin-top: 148px;
     font-size: 16px;
     line-height: 1.5;
+  }
+}
+
+.description__item br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }

@@ -2,20 +2,20 @@
   position: relative;
   display: block;
   padding-left: 45px;
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     padding-left: 60px;
-    margin-bottom: 33px;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
 
 .control__mark {
   position: absolute;
-  top: -8px;
-  left: 0;
-  width: 30px;
-  height: 30px;
+  top: -6px;
+  left: -1px;
+  width: 29px;
+  height: 29px;
   border: 1px solid @range-color;
 
   &:hover {
@@ -23,9 +23,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 40px;
-    height: 40px;
-    top: -11px;
+    width: 39px;
+    height: 39px;
+    top: -6px;
+    left: -2px;
   }
 }
 
@@ -41,7 +42,7 @@
   content: "";
   position: absolute;
   top: 8px;
-  left: 9px;
+  left: 8px;
   width: 13px;
   height: 13px;
   background-color: @decorate-background-color;
@@ -50,7 +51,7 @@
   @media (min-width: @tablet-width) {
     width: 18px;
     height: 18px;
-    top: 11px;
+    top: 10px;
     left: 11px;
   }
 }

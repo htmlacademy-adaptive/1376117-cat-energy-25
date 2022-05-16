@@ -15,12 +15,19 @@
 
 .map__icon {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 42%;
+  top: 39%;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 106px;
+    top: 40%;
+    left: 47%;
+  }
 
   @media (min-width: @desktop-width) {
     top: 40%;
-    left: 49%;
+    left: 48%;
   }
 }
 
