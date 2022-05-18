@@ -21,31 +21,25 @@
   }
 }
 
-.icon__logo-tablet {
-  @media (min-width: @tablet-width) {
-    display: inline-block;
-    margin-top: 25px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.icon__logo-desktop {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: inline-block;
-    margin-top: 53px;
-  }
-}
-
 .icon__image {
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 174px;
+    height: 52px;
+    margin-top: 25px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
   }
 }
 
