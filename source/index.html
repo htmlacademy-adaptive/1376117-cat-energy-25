@@ -9,18 +9,17 @@
     <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/source/fonts/oswaldregular.woff2" as="font">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__icons icon" href="#">
-          <svg class="icon__logo-tablet icon__state" width="174" height="52">
-            <use xlink:href="img/sprite.svg#logo-tablet"></use>
-          </svg>
-          <svg class="icon__logo-desktop icon__state" width="202" height="60">
-            <use xlink:href="img/sprite.svg#logo-desktop"></use>
-          </svg>
-          <img class="icon__image" src="img/header/logo-mobile.svg" width="33px" height="38px" alt="Иконка Кэт Энерджи.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+            <img class="icon__image" src="img/header/logo-mobile.svg" width="33" height="38" alt="Иконка Кэт Энерджи.">
+          </picture>
           <img class="icon__logo" src="img/header/logo-cat-energy.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
         </a>
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -157,15 +156,13 @@
           title="Офис компании по адресу улица Большая Конюшенная дом 19/8 Санкт-Петербург"></iframe>
           <picture>
             <source media="(min-width: 768px)" srcset="img/index/map-pin.png 1x, img/index/map-pin@2x.png 2x">
-            <img class="map__icon" src="img/index/map-pin.png" srcset="img/index/map-pin@2x.png 2x" width="57" height="53" alt="Пин где расположение магазина.">
+            <img class="map__icon" src="img/index/map-pin-mobile.png" srcset="img/index/map-pin-mobile@2x.png 2x" width="57" height="53" alt="Пин где расположение магазина.">
           </picture>
         </div>
         </div>
         <div class="main-footer__container">
           <a href="#">
-            <svg class="main-footer__logo" width="128" height="24" >
-              <use xlink:href="img/sprite.svg#logo-energy"></use>
-            </svg>
+            <img class="main-footer__logo-energy" src="img/header/logo-energy.svg" width="128px" height="24px" alt="Логотип Кэт Энерджи.">
           </a>
           <div class="main-footer__social social">
             <ul class="social__list">

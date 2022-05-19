@@ -78,7 +78,8 @@
 
   //если поле заполнено с ошибкой, то js добавляет модификатор error
   &--error {
-    outline: 2px solid @border-color-error;
+    border-color: @border-color-error;
+    outline: 1px solid @border-color-error;
   }
 
   &--error + .questionary__icon {
@@ -472,12 +473,12 @@
     line-height: 1;
     position: absolute;
     right: 175px;
-    bottom: 90px;
+    bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 35%;
-    top: 92%;
+    right: 500px;
+    bottom: 19px;
   }
 }
 
