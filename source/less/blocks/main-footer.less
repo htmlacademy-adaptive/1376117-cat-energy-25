@@ -1,5 +1,6 @@
 .main-footer {
   min-height: 236px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     min-height: 150px;
@@ -11,14 +12,8 @@
 }
 
 .main-footer__wrapper {
-  width: 320px;
   margin: 0 auto;
   background-color: @block-background-color;
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-  }
 
   @media (min-width: @desktop-width) {
     width: 100%;
@@ -30,17 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 88%;
-    height: 1px;
-    background-color: @weight-line-decoration;
-    top: 40%;
-    left: 20px;
-  }
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     background-color: @block-background-color;
@@ -48,10 +33,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 56px 30px 57px;
-
-    &::after {
-      width: 0;
-    }
+    margin: 0 auto;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
@@ -64,6 +47,7 @@
 .main-footer__container a {
   @media (min-width: @tablet-width) {
     align-self: flex-end;
+    justify-content: flex-end;
   }
 }
 
@@ -99,5 +83,18 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+}
+
+.main-footer__social {
+  border-top: 1px solid @weight-line-decoration;
+  border-bottom: 1px solid @weight-line-decoration;
+  width: 87%;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    margin: 0;
+    width: 127px;
   }
 }

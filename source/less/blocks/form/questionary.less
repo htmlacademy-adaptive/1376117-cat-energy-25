@@ -1,3 +1,12 @@
+.questionary {
+  font-family: @font;
+  padding-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
 .questionary__form {
   @media (min-width: @tablet-width) {
     position: relative;
@@ -5,10 +14,11 @@
 }
 
 .questionary__cat-info {
+  margin: 0;
+  padding: 0;
   border: none;
   border-bottom: 1px solid @weight-line-decoration;
-  padding: 0 20px 23px;
-  margin: 0;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -24,6 +34,17 @@
     padding-left: 110px;
     margin-right: auto;
     width: 570px;
+  }
+}
+
+.questionary__wrapper {
+  width: 320px;
+  padding: 0 20px 23px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
   }
 }
 
@@ -46,6 +67,8 @@
 }
 
 .questionary__field-name {
+  font-size: 16px;
+  line-height: 18px;
   margin-right: 12px;
   margin-bottom: 2px;
   text-transform: uppercase;
@@ -73,7 +96,7 @@
   }
 
   &--phone {
-    width: 204px;
+    width: 203px;
   }
 
   //если поле заполнено с ошибкой, то js добавляет модификатор error
@@ -139,7 +162,7 @@
 
 .questionary__icon {
   position: absolute;
-  right: 16px;
+  right: 15px;
   top: 30%;
 
   &--envelope {
@@ -200,13 +223,13 @@
   }
 }
 
-.guestionary__contacts-form,
+.questionary__contacts-form,
 .questionary__comment,
 .questionary__extra-form {
   border: none;
 }
 
-.guestionary__contacts-form {
+.questionary__contacts-form {
   margin: 0;
   padding: 0;
   padding-bottom: 25px;
@@ -282,6 +305,20 @@
   }
 }
 
+.questionary__contacts-wrap {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.questionary__contacts-wrap .questionary__subtitle-form {
+  width: 185px;
+  margin-left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 0;
+  }
+}
+
 .questionary__contacts-wrap label {
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
@@ -332,7 +369,7 @@
 }
 
 .questionary__subtitle-form {
-  margin: 0 0 35px;
+  margin: 0 0 36px -20px;
   padding: 0 23px 0 20px;
   font-weight: 400;
   font-size: 24px;
@@ -365,7 +402,8 @@
   width: 280px;
   min-height: 150px;
   box-sizing: border-box;
-  margin: 0 20px 26px;
+  margin: 0;
+  margin-bottom: 2px;
   padding: 9px 12px 9px 15px;
   border: 1px solid @border-color-field;
   resize: none;
@@ -431,11 +469,11 @@
 
 .questionary__list {
   margin: 0;
-  margin-top: 3px;
+  margin-top: 2px;
   list-style-type: none;
   color: @black-color;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0;
 
   @media (min-width: 768px) {
     margin-top: -19px;
@@ -484,7 +522,7 @@
 
 .questionary__button-apply {
   display: block;
-  margin: 16px auto 21px;
+  margin: -7px auto 20px;
   padding: 10px 44px;
   width: 280px;
   font-size: 16px;
