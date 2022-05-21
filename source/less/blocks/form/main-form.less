@@ -1,11 +1,20 @@
+.main-form {
+  border-top: 1px solid @weight-line-decoration;
+  background-image: none;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
 .main-form__wrapper {
   width: 320px;
   font-family: @font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding: 27px 0 32px;
-  border-top: 1px solid @weight-line-decoration;
+  padding: 27px 0 0;
+  margin: 0 auto;
 
   &:hover {
     border-color: @range-color;
@@ -22,14 +31,13 @@
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    padding: 60px 0 71px 0;
-    border: none;
+    padding: 60px 0 0 0;
     margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
-    padding: 70px 0 78px;
+    padding: 70px 0 0;
     margin: 0 auto;
   }
 }
@@ -69,7 +77,7 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0 70px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {

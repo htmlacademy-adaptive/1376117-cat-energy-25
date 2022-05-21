@@ -1,12 +1,13 @@
 .main-container {
   flex-grow: 1;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   min-height: 480px;
   position: relative;
+  background-image: linear-gradient(to bottom, @opacity-background-color 303px, @base-color 303px);
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    background-image: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,13 +17,15 @@
 }
 
 .main-container__wrapper {
-  background-image: linear-gradient(to bottom, @opacity-background-color 300px, @base-color 300px),
+  background-image: linear-gradient(to bottom, @opacity-background-color 303px, @base-color 303px),
     url("../img/index/index-background-1.jpg");
   background-repeat: no-repeat;
+  margin: 0 auto;
   margin-bottom: 27px;
+  width: 320px;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(to bottom, @opacity-background-color 300px, @base-color 300px),
+    background-image: linear-gradient(to bottom, @opacity-background-color 303px, @base-color 303px),
       url("../img/index/index-background@2x.jpg");
     background-size: contain;
   }
@@ -30,6 +33,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 0;
     background-image: none;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {

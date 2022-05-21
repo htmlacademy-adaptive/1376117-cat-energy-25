@@ -20,6 +20,7 @@
 
   &:hover {
     border-color: @hover-color-radio;
+    cursor: pointer;
   }
 
   @media (min-width: @tablet-width) {
@@ -71,5 +72,15 @@
     height: 26px;
     top: 11px;
     left: 11px;
+  }
+}
+
+.control__label {
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

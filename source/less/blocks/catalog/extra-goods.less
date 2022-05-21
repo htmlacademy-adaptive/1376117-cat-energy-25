@@ -1,84 +1,72 @@
 .extra-goods {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    background-color: @decorate-background-color;
+    height: 2px;
+    width: 100%;
+    z-index: -1;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 0;
+
+    &::before {
+      top: 23px;
+    }
+  }
+}
+
+.extra-goods__wrapper {
+  width: 280px;
+  padding: 0 20px 33px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px 73px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px 85px;
+    width: 1220px;
+  }
+}
+
+.extra-goods__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .extra-goods__title {
-  padding-left: 20px;
+  padding: 0 20px;
+  margin: 0;
+  margin-left: -20px;
   font-family: @font;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: @black-color;
-  margin-bottom: 35px;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 14px;
-    background-color: @decorate-background-color;
-    height: 2px;
-    width: 17%;
-    z-index: -1;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding-left: 67px;
-    padding-right: 36px;
-    margin-bottom: 80px;
-    font-size: 36px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 23px;
-      background-color: @decorate-background-color;
-      height: 2px;
-      width: 30px;
-    }
-
-    &::after {
-      width: 43%;
-      top: 23px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-left: 110px;
-      margin-bottom: 81px;
-
-      &::before {
-        left: 0;
-        top: 23px;
-        width: 70px;
-      }
-
-      &::after {
-        width: 957px;
-        top: 23px;
-      }
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 110px;
-  }
-}
-
-.extra-goods__wrapper {
-  padding: 0 20px;
+  margin-bottom: 34px;
+  background-color: @base-color;
+  display: inline-block;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
+    margin-left: 8px;
+    margin-bottom: 80px;
+    font-size: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
-    display: flex;
-    justify-content: space-between;
+    margin-left: -30px;
+    margin-bottom: 80px;
   }
 }
 
@@ -146,7 +134,7 @@
   }
 }
 
-.extra-goods_subtitle {
+.extra-goods__subtitle {
   margin: 0;
   font-family: @font;
   font-weight: 400;
