@@ -9,7 +9,7 @@
 
 .questionary__form {
   @media (min-width: @tablet-width) {
-    position: relative;
+    padding-bottom: 78px;
   }
 }
 
@@ -33,6 +33,11 @@
     padding: 0;
     padding-left: 110px;
     margin-right: auto;
+  }
+}
+
+.questionary__cat-info .questionary__wrapper {
+  @media (min-width: @desktop-width) {
     width: 570px;
   }
 }
@@ -44,7 +49,12 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 630px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
   }
 }
 
@@ -72,6 +82,11 @@
   margin-right: 12px;
   margin-bottom: 2px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-right: 14px;
@@ -205,21 +220,27 @@
   margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    padding: 30px 28px 5px;
-    margin-left: 71px;
+    padding: 0;
+    margin: 0 auto;
     margin-bottom: 75px;
     border-bottom: none;
-    border: 1px solid @border-color-field;
-    width: 574px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 10px;
-    left: 800px;
-    margin: -10px 110px 65px -40px;
-    padding-bottom: 27px;
-    width: 510px;
+    margin: 0 110px 65px 40px;
+    width: 568px;
+  }
+}
+
+.questionary__program-selection .questionary__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 30px 28px 28px;
+    width: 628px;
+    border: 1px solid @border-color-field;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }
 
@@ -269,7 +290,7 @@
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 65px 0 71px;
+    padding: 0 67px 0 71px;
   }
 
   @media (min-width: @desktop-width) {
@@ -308,6 +329,14 @@
 .questionary__contacts-wrap {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .questionary__contacts-wrap .questionary__subtitle-form {
@@ -315,7 +344,12 @@
   margin-left: 0;
 
   @media (min-width: @tablet-width) {
-    width: 0;
+    width: auto;
+    margin-left: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
   }
 }
 
@@ -356,7 +390,7 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
-    margin-bottom: 65px;
+    margin-bottom: 62px;
 
     &::after {
       top: 7%;
@@ -382,13 +416,14 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-    padding: 0 40px;
-    margin-left: 29px;
+    padding: 0 40px 0 35px;
+    margin-left: -35px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 70px;
     margin-top: -3px;
+    padding: 0 40px;
   }
 }
 
@@ -421,7 +456,6 @@
   @media (min-width: @tablet-width) {
     width: 631px;
     min-height: 174px;
-    margin: 0 67px 0 70px;
     padding: 10px 19px;
     font-size: 20px;
     line-height: 1.5;
@@ -480,7 +514,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 41px 58px;
-    padding: 5px 67px 0 70px;
+    padding-top: 5px;
+    padding-left: 3px;
   }
 
   @media (min-width: @desktop-width) {
@@ -498,6 +533,18 @@
   }
 }
 
+.questionary__wrap-button {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+}
+
 .questionary__legend-form {
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -510,7 +557,7 @@
     font-size: 16px;
     line-height: 1;
     position: absolute;
-    right: 175px;
+    right: 174px;
     bottom: 20px;
   }
 
@@ -530,7 +577,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 15px 35px;
-    margin: 62px auto 0 71px;
+    margin: 62px auto 0 72px;
     font-size: 20px;
     line-height: 1;
   }
@@ -549,5 +596,13 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.questionary__box {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
   }
 }

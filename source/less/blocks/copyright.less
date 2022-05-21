@@ -2,16 +2,6 @@
   padding-top: 22px;
   position: relative;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 95%;
-  //   height: 1px;
-  //   background-color: @weight-line-decoration;
-  //   top: 0;
-  //   left: 20px;
-  // }
-
   @media (min-width: @tablet-width) {
     width: auto;
     padding: 0;
@@ -33,12 +23,16 @@
   width: 280px;
   margin: 0 auto;
 
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
+
   &:active {
     color: @icons-color-opacity;
   }
 }
 
-.copyright__icon {
+.copyright__link svg {
   fill: @icons-color;
 
   &:hover {

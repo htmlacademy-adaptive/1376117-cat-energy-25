@@ -56,54 +56,56 @@
       </div>
       <section class="questionary">
         <form class="questionary__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="questionary__cat-info">
-            <div class="questionary__wrapper">
+          <div class="questionary__box">
+            <fieldset class="questionary__cat-info">
               <legend class="visually-hidden">Анкета кота.</legend>
-              <label class="questionary__form-label">
-                <span class="questionary__field-name">Имя:<sup>*</sup></span>
-                <input class="questionary__field questionary__field--name field" type="text" name="name" placeholder="Барсик" required>
-              </label>
-              <label class="questionary__form-label">
-                <span class="questionary__field-name">Вес (кг):<sup>*</sup></span>
-                <input class="questionary__field questionary__field--weight field" type="text" name="weight" placeholder="7" required>
-              </label>
-              <label class="questionary__form-label">
-                <span class="questionary__field-name">Возраст (лет):</span>
-                <input class="questionary__field questionary__field--age field" type="text" name="age" placeholder="7" required>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="questionary__program-selection program-goal">
-            <div class="questionary__wrapper">
+              <div class="questionary__wrapper">
+                <label class="questionary__form-label">
+                  <span class="questionary__field-name">Имя:<sup>*</sup></span>
+                  <input class="questionary__field questionary__field--name field" type="text" name="name" placeholder="Барсик" required>
+                </label>
+                <label class="questionary__form-label">
+                  <span class="questionary__field-name">Вес (кг):<sup>*</sup></span>
+                  <input class="questionary__field questionary__field--weight field" type="text" name="weight" placeholder="7" required>
+                </label>
+                <label class="questionary__form-label">
+                  <span class="questionary__field-name">Возраст (лет):</span>
+                  <input class="questionary__field questionary__field--age field" type="text" name="age" placeholder="7" required>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="questionary__program-selection program-goal">
               <legend class="visually-hidden">Цель программы</legend>
-              <ul class="program-goal__list">
-                <li class="program-goal__item">
-                  <label class="program-goal__control control">
-                    <input class="visually-hidden control__input" type="radio" name="goal" value="decrease-weight" checked>
-                    <span class="control__mark"></span>
-                    <span class="control__label">Похудение</span>
-                  </label>
-                </li>
-                <li class="program-goal__item">
-                  <label class="program-goal__control control">
-                    <input class="visually-hidden control__input" type="radio" name="goal" value="increase-weight">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="program-goal__item">
-                  <label class="program-goal__control control">
-                    <input class="visually-hidden control__input" type="radio" name="goal" value="advice">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
+              <div class="questionary__wrapper">
+                <ul class="program-goal__list">
+                  <li class="program-goal__item">
+                    <label class="program-goal__control control">
+                      <input class="visually-hidden control__input" type="radio" name="goal" value="decrease-weight" checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="program-goal__item">
+                    <label class="program-goal__control control">
+                      <input class="visually-hidden control__input" type="radio" name="goal" value="increase-weight">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="program-goal__item">
+                    <label class="program-goal__control control">
+                      <input class="visually-hidden control__input" type="radio" name="goal" value="advice">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="questionary__contacts-form">
             <div class="questionary__contacts-wrap">
-              <h2 class="questionary__subtitle-form">Контактные данные<br>(владельца кота)</h2>
+              <h2 class="questionary__subtitle-form">Контактные данные (владельца кота)</h2>
               <div class="questionary__contacts-container">
                 <label class="questionary__form-label">
                   <span class="questionary__field-name">E-mail:<sup>*</sup></span>
@@ -163,10 +165,12 @@
               </ul>
             </div>
           </fieldset>
-          <button class="questionary__button-apply button" type="submit">Отправить заявку</button>
-          <small class="questionary__legend-form">
-            * — Обязательные поля
-          </small>
+          <div class="questionary__wrap-button">
+            <button class="questionary__button-apply button" type="submit">Отправить заявку</button>
+            <small class="questionary__legend-form">
+              * — Обязательные поля
+            </small>
+          </div>
         </form>
       </section>
     </main>
@@ -222,7 +226,7 @@
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span>HTML Academy</span>
-              <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" fill="currentColor">
+              <svg class="copyright__link-icon" aria-hidden="true" focusable="false" width="27" height="34" fill="currentColor">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>
